@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our One Year 💙</title>
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+  color:white;
+  text-align:center;
+}
+section{ padding:60px 20px; }
+h1,h2{ letter-spacing:1px; }
+button{
+  padding:12px 25px;
+  border:none;
+  border-radius:25px;
+  background:#ff6f91;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+.card{
+  max-width:600px;
+  margin:auto;
+  background:rgba(255,255,255,0.1);
+  padding:25px;
+  border-radius:20px;
+  margin-top:30px;
+}
+img{
+  width:100%;
+  border-radius:15px;
+  margin-top:15px;
+}
+.music-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  padding:12px 18px;
+  border:none;
+  border-radius:50px;
+  background:#ff6f91;
+  color:white;
+  font-size:18px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+footer{ padding:30px; font-size:14px; opacity:0.8; }
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 Background Music -->
+<audio id="bgm" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="playMusic()">🎵</button>
+
+<script>
+function playMusic(){
+  var music = document.getElementById("bgm");
+  music.volume = 0.4; // 🔊 LOW–MEDIUM SOUND
+  music.play();
+}
+</script>
+
+<section>
+  <h1>Happy One Year 💙</h1>
+  <p>Distance may separate us, but love keeps us together.</p>
+  <button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+    Start Our Story
+  </button>
+</section>
+
+<section id="story">
+  <h2>Our Journey ✨</h2>
+  <div class="card">
+    <p>
+      From the first message to endless calls,<br>
+      from laughter to misunderstandings,<br>
+      every moment with you is worth it.
+    </p>
+    <p>
+      Even miles apart, I choose you.<br>
+      Today. Tomorrow. Always.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Our Memories 📸</h2>
+  <div class="card">
+    <p>Add your favorite photos here 👇</p>
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+  </div>
+</section>
+
+<section>
+  <h2>A Letter For You 💌</h2>
+  <div class="card">
+    <p>
+      One year ago, we promised something beautiful.<br>
+      Even with distance, that promise still feels strong.
+    </p>
+    <p>
+      Thank you for choosing me every day 💙
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>One Last Thing… 💍</h2>
+  <div class="card">
+    <p>This website is small.</p>
+    <p>But my love for you isn’t.</p>
+    <p>Until distance becomes zero ❤️</p>
+  </div>
+</section>
+
+<footer>
+  Made with ❤️ just for you
+</footer>
+
+</body>
+</html>
